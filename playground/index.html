@@ -8,10 +8,14 @@
       <meta name="author" content="">
 
       <!-- Bootstrap -->
-      <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+      <!-- Bootstrap theme -->
+      <link href="../css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+      <!-- custom css -->
+      <link href="../css/custom.css" rel="stylesheet" media="screen">
       <style>
           body {
-              padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+              padding-top: 50px;
           }
       </style>
   </head>
@@ -21,17 +25,19 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
 
       <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Dev Projects</a>
-          <div class="collapse navbar-collapse">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Dev Projects</a>
+          </div>
+          <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                  <li><a href="http://code.dnorton.org">Code</a></li>
-                  <li><a href="http://dnorton.org">Blog</a></li>
+                  <li><a href="http://dnorton.org" class=".white"><span class="glyphicon glyphicon-home white"></span></a></li>
+                  <li class="active"><a href="http://code.dnorton.org">Code</a></li>
                   <li><a href="http://dnorton.org/about/">About</a></li>
               </ul>
           </div><!--/.nav-collapse -->
@@ -39,7 +45,9 @@
   </div>
     <div class="container">
 
-        <p><i>This directory will contain Javascript examples and demos (eventually)</i></p>
+        <h2>Demos</h2>
+
+        <p><i>This directory contains Javascript examples and demos</i></p>
 
         <p>First stop, <a href="http://angularjs.org/">angular.js</a></p>
         <ul>
@@ -48,6 +56,11 @@
 
 
     </div>
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 
   
